@@ -21,12 +21,12 @@ GL_DB_NAME="${GL_DB_NAME:?"GL_DB_NAME not configured"}"
 
 GL_HOST="${GL_DB_HOST:?"GL_HOST not configured"}"
 
-GL_DB_HOST="$(echo "${GL_DB_HOST}" | base64)"
-GL_DB_USER="$(echo "${GL_DB_USER}" | base64)"
-GL_DB_PASS="$(echo "${GL_DB_PASS}" | base64)"
-GL_DB_NAME="$(echo "${GL_DB_NAME}" | base64)"
-GL_DB_PREFIX="$(echo "${GL_DB_PREFIX}" | base64)"
-GL_HOST="$(echo "${GL_HOST}" | base64)"
+GL_DB_HOST="$(echo -n "${GL_DB_HOST}" | base64)"
+GL_DB_USER="$(echo -n "${GL_DB_USER}" | base64)"
+GL_DB_PASS="$(echo -n "${GL_DB_PASS}" | base64)"
+GL_DB_NAME="$(echo -n "${GL_DB_NAME}" | base64)"
+GL_DB_PREFIX="$(echo -n "${GL_DB_PREFIX}" | base64)"
+GL_HOST="$(echo -n "${GL_HOST}" | base64)"
 
 sed -i -e 's/$_CONFIG\[0\]\["gl_db_host"\] = "";/$_CONFIG[0]["gl_db_host"] = "'$GL_DB_HOST'";/'   _config/default.config.inc.php
 sed -i -e 's/$_CONFIG\[0\]\["gl_db_user"\] = "";/$_CONFIG[0]["gl_db_user"] = "'$GL_DB_USER'";/'   _config/default.config.inc.php
