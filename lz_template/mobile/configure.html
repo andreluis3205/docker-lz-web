@@ -1,0 +1,191 @@
+<!--
+ /****************************************************************************************
+ * LiveZilla configure.html
+ *
+ * Copyright 2013 LiveZilla GmbH
+ * All rights reserved.
+ * LiveZilla is a registered trademark.
+ *
+ ***************************************************************************************/
+-->
+<!DOCTYPE HTML>
+<html manifest="lzm.appcache" style="overflow: auto;">
+<head>
+    <title>
+        Livezilla Mobile
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="./js/jquery_mobile/jquery.mobile-1.3.0.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/livezilla.css"/>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/jquery_mobile/jquery.mobile-1.3.0.min.js"></script>
+
+    <script type="text/javascript" src="./js/jsglobal.js"></script>
+    <script type="text/javascript" src="./js/md5.js"></script>
+
+    <script type="text/javascript" src="./js/lzm/classes/CommonDeviceInterfaceClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonWindowsDeviceInterfaceClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonConfigClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonToolsClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonDisplayClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonDialogClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonDisplayHelperClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonStorageClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonTranslationClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/configure.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('load', function(e) {
+            //logit('Load event');
+            window.applicationCache.addEventListener('error', handleCacheError, false);
+            window.applicationCache.addEventListener('checking', handleCacheEvent, false);
+            window.applicationCache.addEventListener('cached', handleCacheEvent, false);
+            window.applicationCache.addEventListener('downloading', handleCacheEvent, false);
+            window.applicationCache.addEventListener('noupdate', handleCacheEvent, false);
+            window.applicationCache.addEventListener('obsolete', handleCacheEvent, false);
+            window.applicationCache.addEventListener('progress', handleCacheEvent, false);
+            window.applicationCache.addEventListener('updateready', handleCacheEvent, false);
+        }, false);
+
+        var handleCacheError = function(e) {
+            //logit('Error updating the app cache');
+            //logit(e);
+        };
+
+        var logit = function(myString) {
+            try {
+                console.log(myString);
+            } catch(e) {}
+        };
+
+        var handleCacheEvent = function(e) {
+            //logit('Cache event');
+            switch (e.type) {
+                case 'noupdate':
+                    //logit('NOUPDATE');
+                    break;
+                case 'downloading':
+                    //logit('DOWNLOADING');
+                    break;
+                case 'checking':
+                    //logit('CHECKING');
+                    break;
+                case 'progress':
+                    //logit('PROGRESS');
+                    break;
+                case 'updateready':
+                    //logit('UPDATEREADY');
+                    try{
+                        window.applicationCache.swapCache();
+                        window.location.reload();
+                    } catch(e) {}
+                    break;
+                default:
+                    //logit('UKNOWN CACHE STATUS: ' + e.type);
+                    break;
+            }
+        };
+    </script>
+</head>
+<body style="overflow: auto;">
+
+<div id="configure_page" data-role="page">
+    <header id="header_configure" data-role="header" data-position="fixed">
+        <h1 id="headline1">&nbsp;</h1>
+        <!--<a href="#" data-icon="back" data-iconpos="right" id="back_btn" data-mini="true" data-inline="true"
+            class="ui-btn-right">&nbsp;</a>-->
+    </header>
+    <div id="content_configure" data-role="content" style="overflow: visible;"> <!--article-->
+        <div id="logo-container"></div>
+        <div id="configure_form">
+            <div id="server_profile_selection-container">
+            </div>
+
+            <div id="profile_buttons" style="text-align: right; margin-top: 20px;"></div>
+
+            <div id="new_profile_form" style="display:none;">
+                <table class="new-profile-table">
+                    <tr>
+                        <td><label id="server_profile-text" for="server_profile"></label></td>
+                        <td><input type="text" name="server_profile" class="data-input lzm-text-input" id="server_profile"
+                                   data-role="none" autocapitalize="off" autocorrect="off" /></td>
+                    </tr>
+                    <tr>
+                        <td><label id="server_url-text" for="server_url"></label></td>
+                        <td><input type="text" data-role="none" name="server_url" class="data-input lzm-text-input"
+                                   id="server_url" autocapitalize="off" autocorrect="off" value="http://" /></td>
+                    </tr>
+                    <tr>
+                        <td><label id="mobile_dir-text" for="mobile_dir"></label></td>
+                        <td><input type="text" data-role="none" name="mobile_dir" class="data-input lzm-text-input"
+                                   id="mobile_dir" autocapitalize="off" autocorrect="off" value="mobile" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><input type="checkbox" data-role="none" name="save_login" id="save_login" class="save_login" style="margin-left: 0px; vertical-align: middle;" />
+                            <label id="save_login-text" for="save_login">&nbsp;</label></td>
+                    </tr>
+                    <tr>
+                        <td><label id="login_name-text" for="login_name"></label></td>
+                        <td><input type="text" data-role="none" name="login_name" class="data-input login_data lzm-text-input ui-disabled"
+                            id="login_name" autocapitalize="off" autocorrect="off" /></td>
+                    </tr>
+                    <tr>
+                        <td><label id="login_passwd-text" for="login_passwd"></label></td>
+                        <td><input type="password" data-role="none" name="login_passwd" class="data-input login_data lzm-text-input ui-disabled"
+                            id="login_passwd" /></td>
+                    </tr>
+                </table>
+                <input type="hidden" name="lz_version" id="lz_version" value="5.0.1.2" />
+            </div>
+
+            <div id="edit_profile_form" style="display:none;">
+                <table class="edit-profile-table">
+                    <tr>
+                        <td><label id="edit_server_profile-text" for="edit_server_profile"></label></td>
+                        <td><input type="text" name="server_profile" class="data-input lzm-text-input" id="edit_server_profile"
+                                   data-role="none" autocapitalize="off" autocorrect="off" /></td>
+                    </tr>
+                    <tr>
+                        <td><label id="edit_server_url-text" for="edit_server_url"></label></td>
+                        <td><input type="text" data-role="none" name="server_url" class="data-input lzm-text-input"
+                                   id="edit_server_url" autocapitalize="off" autocorrect="off" /></td>
+                    </tr>
+                    <tr>
+                        <td><label id="edit_mobile_dir-text" for="edit_mobile_dir"></label></td>
+                        <td><input type="text" data-role="none" name="mobile_dir" class="data-input lzm-text-input"
+                                   id="edit_mobile_dir" autocapitalize="off" autocorrect="off" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><input type="checkbox" data-role="none" name="save_login" id="edit_save_login" class="save_login" style="margin-left: 0px; vertical-align: middle;" />
+                            <label id="edit_save_login-text" for="edit_save_login">&nbsp;</label></td>
+                    </tr>
+                    <tr>
+                        <td><label id="edit_login_name-text" for="edit_login_name"></label></td>
+                        <td><input type="text" data-role="none" name="login_name" class="data-input login_data lzm-text-input ui-disabled"
+                                   id="edit_login_name" autocapitalize="off" autocorrect="off" /></td>
+                    </tr>
+                    <tr>
+                        <td><label id="edit_login_passwd-text" for="edit_login_passwd"></label></td>
+                        <td><input type="password" data-role="none" name="login_passwd" class="data-input login_data lzm-text-input ui-disabled"
+                                   id="edit_login_passwd" /></td>
+                    </tr>
+                </table>
+                <input type="hidden" id="profile_index" value="-1" />
+                <input type="hidden" name="edit_lz_version" id="edit_lz_version" value="5.0.1.2" />
+            </div>
+
+            <div id="configure_buttons" style="text-align: right; margin-top: 20px;; margin-bottom: 12px;"></div>
+        </div>
+    </div> <!--article-->
+    <footer id="footer_configure" data-role="footer" data-position="fixed" data-id=footer>
+    </footer>
+</div>
+
+</body>
+</html>
