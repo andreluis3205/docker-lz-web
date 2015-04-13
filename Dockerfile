@@ -15,6 +15,7 @@ RUN chmod 755 /start.sh
 EXPOSE 443
 EXPOSE 80
 
+VOLUME [ "/usr/share/nginx/html/_config" ] 
 VOLUME [ "/usr/share/nginx/html/_log" ] 
 
 CMD ["/bin/bash", "/entrypoint.sh"]
