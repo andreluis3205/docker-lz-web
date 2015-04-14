@@ -19,7 +19,7 @@ GL_DB_PREFIX=${GL_DB_PREFIX:-""}
 GL_DB_NAME=${GL_DB_NAME:-$LZ_MYSQL_ENV_MYSQL_DATABASE}
 GL_DB_NAME="${GL_DB_NAME:?"GL_DB_NAME not configured"}"
 
-GL_HOST="${GL_DB_HOST:?"GL_HOST not configured"}"
+GL_HOST="${GL_HOST:?"GL_HOST not configured"}"
 
 GL_DB_HOST="$(echo -n "${GL_DB_HOST}" | base64)"
 GL_DB_USER="$(echo -n "${GL_DB_USER}" | base64)"
@@ -34,5 +34,6 @@ sed -i -e 's/$_CONFIG\[0\]\["gl_db_pass"\] = "";/$_CONFIG[0]["gl_db_pass"] = "'$
 sed -i -e 's/$_CONFIG\[0\]\["gl_db_name"\] = "";/$_CONFIG[0]["gl_db_name"] = "'$GL_DB_NAME'";/'   _config/default.config.inc.php
 sed -i -e 's/$_CONFIG\[0\]\["gl_db_prefix"\] = "";/$_CONFIG[0]["gl_db_prefix"] = "'$GL_DB_PREFIX'";/'   _config/default.config.inc.php
 sed -i -e 's/$_CONFIG\[0\]\["gl_host"\] = "";/$_CONFIG[0]["gl_host"] = "'$GL_HOST'";/'   _config/default.config.inc.php
+sed -i -e 's/$_CONFIG\[0\]\["gl_datprov"\] = "MA==";/$_CONFIG[0]["gl_datprov"] = "MQ==";/'  _config/default.config.inc.php
 
 exec /start.sh
