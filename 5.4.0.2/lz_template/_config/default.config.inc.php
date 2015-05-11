@@ -15,16 +15,16 @@
 
 // ALL VALUES ARE BASE64 ENCODED (encoder/decoder can be found on the net)
 
-$_CONFIG["gl_lzid"] = "YzM5MWY1YjI=";
+$_CONFIG["gl_lzid"] = "YmQ2ZGFkYjc=";
 $_CONFIG["gl_lzst"] = "MA==";
-$_CONFIG["gl_pr_csp"] = "YzJhNDQ3Y2Y0ZGZhMmNmZTExMjhkMGFkNGQyOTk2NmU=";
-$_CONFIG["gl_pr_nbl"] = "MzE3YWFhNTg0YzM3YmQ3ODE5MmIxMjU5MzkyOTE1NmM=";
-$_CONFIG["gl_pr_ngl"] = "ZTdjYjc4MzQzY2U2YmI1MjllNzUxMDg1N2UyMTc1MzU=";
-$_CONFIG["gl_pr_str"] = "YzYwOGI2ZDFkMDFhZjZhMDNiYWQ1ZmVkMjRhYjViOTE=";
+$_CONFIG["gl_pr_csp"] = "ODRmZjlhYjIzMzJjOTI2ZGYxNDY2ZjdkNTk2OWM5Njg=";
+$_CONFIG["gl_pr_nbl"] = "MTIxNGUyYjgyZjRkYjViNmYwNjYyNzVmNDMyMmI1YjE=";
+$_CONFIG["gl_pr_ngl"] = "ZWYxNmVjYjRlNGFjMGFiNTkyZmQyNTY0Y2RiZWMzNDI=";
+$_CONFIG["gl_pr_str"] = "NjBjOWYzZjk0YzRkNjdlMmVjMWQ2MDkzMzIxOWUzNjI=";
 $_CONFIG["gl_pr_st"] = "MF8wXzA=";
-$_CONFIG["gl_pr_cr"] = "MTQzMDIyNzM5NA==";
-$_CONFIG["gl_crc3"] = "TVRRek1ESXlOek01TkN3d0xEQXNNQ3d3TERBc1pUZGpZamM0TXpRelkyVTJZbUkxTWpsbE56VXhNRGcxTjJVeU1UYzFNelU9";
-$_CONFIG["gl_licl"][0] = "WVRveU9udHBPakE3Y3pvME5Eb2lUVWRHYkUweVdURlBSR1JxV1hwQ2FWcHRVWHBOVjFVeVRrUlJlRTVYVW1oUFZFWnBUWHBvYWxwcVVUMGlPMms2TVR0ek9qZzZJbFpHU2twUlZYYzlJanQ5";
+$_CONFIG["gl_pr_cr"] = "MTQzMTM4MDAzNw==";
+$_CONFIG["gl_crc3"] = "TVRRek1UTTRNREF6Tnl3d0xEQXNNQ3d3TERBc1pXWXhObVZqWWpSbE5HRmpNR0ZpTlRreVptUXlOVFkwWTJSaVpXTXpOREk9";
+$_CONFIG["gl_licl"][0] = "WVRveU9udHBPakE3Y3pvME5Eb2lXbTFWTVZsNlRUVmFSRVY1VGxkVk5VMXFXWGROYWtrMVdsUkJlRnBFVW1wT2VteG9Ua2RXYTAxdFVUMGlPMms2TVR0ek9qZzZJbFpHU2twUlZYYzlJanQ5";
 
 // Database settings 
 $_CONFIG[0]["gl_db_host"] = "";
@@ -91,8 +91,8 @@ $_CONFIG[0]["gl_gt_vsc"] = "";
 $_CONFIG[0]["gl_gt_us"] = "MQ==";
 $_CONFIG[0]["gl_adct"] = "MA==";
 $_CONFIG[0]["gl_gtl"] = "MA==";
-$_CONFIG[0]["gl_cpar"] = "PGEgY2xhc3M9Imx6X2NoYXRfbWFpbl9saW5rIiBocmVmPSJodHRwOi8vd3d3LmxpdmV6aWxsYS5uZXQvIiB0YXJnZXQ9Il9ibGFuayI+UG93ZXJlZCBieSBMaXZlWmlsbGEgTGl2ZSBDaGF0PC9hPg==";
-$_CONFIG[0]["gl_cpas"] = "PGEgaWQ9Imx6X2NoYXRfY2wiIGNsYXNzPSJsel9vdmVybGF5X2NoYXRfb3B0aW9uc19saW5rIiBocmVmPSJodHRwOi8vd3d3LmxpdmV6aWxsYS5uZXQvIiB0aXRsZT0iUG93ZXJlZCBieSBMaXZlWmlsbGEiIHRhcmdldD0iX2JsYW5rIj5MaXZlWmlsbGEgTGl2ZSBDaGF0PC9hPg==";
+$_CONFIG[0]["gl_cpar"] = "PGEgY2xhc3M9Imx6X2NoYXRfbWFpbl9saW5rIiBocmVmPSJodHRwOi8vd3d3LmxpdmV6aWxsYS5uZXQvIiB0YXJnZXQ9Il9ibGFuayI+UG93ZXJlZCBieSBMaXZlWmlsbGEgV2Vic2l0ZSBDaGF0IFNvZnR3YXJlPC9hPg==";
+$_CONFIG[0]["gl_cpas"] = "PGEgaWQ9Imx6X2NoYXRfY2wiIGNsYXNzPSJsel9vdmVybGF5X2NoYXRfb3B0aW9uc19saW5rIiBocmVmPSJodHRwOi8vd3d3LmxpdmV6aWxsYS5uZXQvIiB0aXRsZT0iUG93ZXJlZCBieSBMaXZlWmlsbGEiIHRhcmdldD0iX2JsYW5rIj5MaXZlWmlsbGEgTGl2ZSBIZWxwPC9hPg==";
 $_CONFIG[0]["gl_cpae"] = "UG93ZXJlZCBieSBMaXZlWmlsbGEgSGVscCBEZXNrIFNvZnR3YXJlIFtodHRwOi8vd3d3LmxpdmV6aWxsYS5uZXRd";
 $_CONFIG[0]["gl_usrsp"] = "TVE9PQ==";
 $_CONFIG[0]["gl_stp"] = "MQ==";
@@ -102,9 +102,9 @@ $_CONFIG[0]["gl_cahi"] = "";
 $_CONFIG[0]["gl_caii"] = "";
 $_CONFIG[0]["gl_sim_ch"] = "Mw==";
 $_CONFIG[0]["gl_cbcd"] = "MQ==";
-$_CONFIG[0]["gl_maskip"] = "MQ==";
+$_CONFIG[0]["gl_maskip"] = "MA==";
 $_CONFIG[0]["gl_cips"] = "MQ==";
-$_CONFIG[0]["gl_miat"] = "MA==";
+$_CONFIG[0]["gl_miat"] = "MQ==";
 $_CONFIG[0]["gl_sho_qu_inf"] = "MQ==";
 $_CONFIG[0]["gl_on_def_lang"] = "MA==";
 $_CONFIG[0]["gl_bldo"] = "MQ==";
