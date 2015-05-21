@@ -1,0 +1,39 @@
+body {
+    font-size:12px;
+    font-family:verdana,arial,sans-serif;
+    margin: 6px;
+    /*overflow-y: auto;*/
+    /*background-color: #E1E8ED;*/
+}
+
+.lz_chat_link {color:#787878;
+    text-decoration:underline;
+    display:inline-block;
+    white-space: nowrap;
+    padding-left:20px;
+    background-image:url('../../img/054-doc_web16c.png');
+    background-repeat:no-repeat;
+    background-position:left;
+}
+
+.lz_chat_file {
+    color:#787878;
+    text-decoration:underline;
+    display:inline-block;
+    white-space: nowrap;
+    padding-left:20px;
+    background-image:url('../../img/622-paper_clip.png');
+    background-repeat:no-repeat;
+    background-position:left;
+}
+
+.lz_chat_mail{
+    color:#787878;
+    text-decoration:underline;
+    display:inline-block;
+    white-space: nowrap;
+    padding:2px 0px 0px 20px;
+    background-image:url('../img/023-email2.png');
+    background-repeat:no-repeat;
+    background-position:left;
+}

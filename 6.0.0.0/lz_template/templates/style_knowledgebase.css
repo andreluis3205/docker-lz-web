@@ -1,0 +1,4 @@
+BODY{font-family:helvetica,arial,verdana;font-size:13px;}
+#lz_chat_dialog_kb_rate{position:fixed;top:0;left:0;right:0;background:#ebebeb;padding:10px;border:1px solid #DDD;font-size:12px;text-align:center;}
+#lz_chat_dialog_kb_rate a{color:#FFF !important;border-radius:3px;padding:4px 6px;margin:0 0 0 5px;background:#878787;cursor:pointer;font-weight:bold;text-decoration:none;}
+#lz_chat_dialog_kb_rate a:hover{background:#676767;}

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html manifest="lzm.appcache">
+<head>
+    <title>
+        Livezilla Mobile
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <script type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var myUri = document.URL;
+            var hashTag = (myUri.indexOf('#') != -1) ? '#' + myUri.split('#')[1] : '';
+            window.location.replace("./index.php" + hashTag);
+        });
+    </script>
+</head>
+<body>
+<p>If you see this line, the redirect did not work properly. Use <a href="./index.php">this link</a> to browse to the LiveZilla Mobile login page</p>
+</body>
+</html>
