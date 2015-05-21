@@ -6,7 +6,7 @@ GL_DB_HOST=${GL_DB_HOST:-$LZ_MYSQL_PORT_3306_TCP_ADDR}
 GL_DB_HOST=${GL_DB_HOST:?"GL_DB_HOST not configured"}
 GL_DB_PORT=${GL_DB_PORT:-$LZ_MYSQL_PORT_3306_TCP_PORT}
 GL_DB_PORT=${GL_DB_PORT:-3306}
-GL_DB_HOST="${GL_DB_HOST}:${GL_DB_PORT}"
+#GL_DB_HOST="${GL_DB_HOST}:${GL_DB_PORT}"
 
 GL_DB_USER=${GL_DB_USER:-$LZ_MYSQL_ENV_MYSQL_USER}
 GL_DB_USER="${GL_DB_USER:?"GL_DB_USER not configured"}"
@@ -28,12 +28,12 @@ GL_DB_NAME="$(echo -n "${GL_DB_NAME}" | base64)"
 GL_DB_PREFIX="$(echo -n "${GL_DB_PREFIX}" | base64)"
 GL_HOST="$(echo -n "${GL_HOST}" | base64)"
 
-sed -i -e 's/$_CONFIG\[0\]\["gl_db_host"\] = "";/$_CONFIG[0]["gl_db_host"] = "'$GL_DB_HOST'";/'   _config/default.config.inc.php
-sed -i -e 's/$_CONFIG\[0\]\["gl_db_user"\] = "";/$_CONFIG[0]["gl_db_user"] = "'$GL_DB_USER'";/'   _config/default.config.inc.php
-sed -i -e 's/$_CONFIG\[0\]\["gl_db_pass"\] = "";/$_CONFIG[0]["gl_db_pass"] = "'$GL_DB_PASS'";/'   _config/default.config.inc.php
-sed -i -e 's/$_CONFIG\[0\]\["gl_db_name"\] = "";/$_CONFIG[0]["gl_db_name"] = "'$GL_DB_NAME'";/'   _config/default.config.inc.php
-sed -i -e 's/$_CONFIG\[0\]\["gl_db_prefix"\] = "";/$_CONFIG[0]["gl_db_prefix"] = "'$GL_DB_PREFIX'";/'   _config/default.config.inc.php
-sed -i -e 's/$_CONFIG\[0\]\["gl_host"\] = "";/$_CONFIG[0]["gl_host"] = "'$GL_HOST'";/'   _config/default.config.inc.php
-sed -i -e 's/$_CONFIG\[0\]\["gl_datprov"\] = "MA==";/$_CONFIG[0]["gl_datprov"] = "MQ==";/'  _config/default.config.inc.php
+sed -i -e 's/$_CONFIG\[0\]\["gl_db_host"\] = "";/$_CONFIG[0]["gl_db_host"] = "'$GL_DB_HOST'";/'   _config/config.php
+sed -i -e 's/$_CONFIG\[0\]\["gl_db_user"\] = "";/$_CONFIG[0]["gl_db_user"] = "'$GL_DB_USER'";/'   _config/config.php
+sed -i -e 's/$_CONFIG\[0\]\["gl_db_pass"\] = "";/$_CONFIG[0]["gl_db_pass"] = "'$GL_DB_PASS'";/'   _config/config.php
+sed -i -e 's/$_CONFIG\[0\]\["gl_db_name"\] = "";/$_CONFIG[0]["gl_db_name"] = "'$GL_DB_NAME'";/'   _config/config.php
+sed -i -e 's/$_CONFIG\[0\]\["gl_db_prefix"\] = "";/$_CONFIG[0]["gl_db_prefix"] = "'$GL_DB_PREFIX'";/'   _config/config.php
+sed -i -e 's/$_CONFIG\[0\]\["gl_host"\] = "";/$_CONFIG[0]["gl_host"] = "'$GL_HOST'";/'   _config/config.php
+sed -i -e 's/$_CONFIG\[0\]\["gl_datprov"\] = "MA==";/$_CONFIG[0]["gl_datprov"] = "MQ==";/'  _config/config.php
 
 exec /start.sh
