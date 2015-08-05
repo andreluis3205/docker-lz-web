@@ -3,7 +3,7 @@ MAINTAINER javier.ramon@gmail.com
 
 RUN /bin/rm -rf /usr/share/nginx/html/*
 COPY /lz_template /usr/share/nginx/html
-RUN chown -Rf nginx.nginx /usr/share/nginx/html/
+RUN chown -Rf www-data.www-data /usr/share/nginx/html/
 WORKDIR /usr/share/nginx/html/
 RUN chmod ugo-w -R .
 RUN chmod u+w -R stats stats/year stats/month stats/day uploads/ _log/ _config/
