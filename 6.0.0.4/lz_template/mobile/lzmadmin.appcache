@@ -1,0 +1,37 @@
+CACHE MANIFEST
+#########################################################################################
+# LiveZilla lzm.appcache
+#
+# Copyright 2015 LiveZilla GmbH
+# All rights reserved.
+# LiveZilla is a registered trademark.
+#
+#########################################################################################
+# <build_date>2015-03-31_11.25.23</build_date>
+
+CACHE:
+admin.php
+js/lzm/admin.js
+css/livezilla6.css
+css/livezilla6Admin.css
+css/livezilla6Controls.css
+js/jquery-2.1.0.min.js
+js/jquery-migrate-1.2.1.min.js
+js/jsglobal.js
+js/md5.js
+js/sha1.js
+js/sha256.js
+js/lzm/classes/CommonInputControlsClass.js
+js/lzm/classes/CommonTranslationClass.js
+js/lzm/classes/CommonToolsClass.js
+js/lzm/classes/CommonPermissionClass.js
+js/lzm/classes/CommonServerEvaluationClass.js
+js/lzm/classes/AdminDisplayLayoutClass.js
+js/lzm/classes/AdminUserManagementClass.js
+js/lzm/classes/AdminPollServerClass.js
+js/lzm/classes/ChatObjectClasses.js
+
+
+
+NETWORK:
+*
