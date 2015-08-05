@@ -6,7 +6,7 @@ COPY /lz_template /usr/share/nginx/html
 RUN chown -Rf www-data.www-data /usr/share/nginx/html/
 WORKDIR /usr/share/nginx/html/
 RUN chmod ugo-w -R .
-RUN chmod ugo+rw -R stats stats/year stats/month stats/day uploads/ _log/ _config/
+RUN chmod ugo+rwx -R stats stats/year stats/month stats/day uploads/ _log/ _config/
 
 COPY /entrypoint.sh /
 RUN chmod 755 /start.sh
