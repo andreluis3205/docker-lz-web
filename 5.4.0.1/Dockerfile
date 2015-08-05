@@ -1,7 +1,7 @@
 FROM richarvey/nginx-php-fpm
 MAINTAINER javier.ramon@gmail.com
 
-RUN /bin/rm -rf /usr/share/nginx/html/
+RUN /bin/rm -rf /usr/share/nginx/html/*
 COPY /lz_template /usr/share/nginx/html
 RUN chown -Rf nginx.nginx /usr/share/nginx/html/
 WORKDIR /usr/share/nginx/html/
