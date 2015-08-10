@@ -1,0 +1,58 @@
+html, body {
+    background-color: #ffffff;
+}
+
+#umg-control-panel, #umg-content {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+#umg-control-panel {
+    top: 0px;
+    height: 25px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 5px 0px 5px;
+}
+
+#umg-content {
+    top: 36px;
+    bottom: 0px;
+    background-color: #ffffff;
+}
+
+#umg-content-inner {
+    padding: 5px;
+    background-color: #ffffff;
+    overflow: auto;
+}
+
+#umg-edit-view, #umg-input-view {
+    padding: 5px;
+    overflow: auto;
+}
+
+.operator-list-line, .group-list-line, .social-media-list-line, .signature-list-line, .text-emails-list-line, .group-title-line, .gr-oh-list-line {
+    cursor: pointer;
+}
+
+input[type=checkbox], input[type=radio] {
+    vertical-align: middle;
+}
+
+#signature-list-div, #text-emails-list-div, #group-title-div, #gr-ticket-social-list-div, #gr-ticket-assign-list-div {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+.tae-inner-tab-textarea-a, .tae-inner-tab-textarea-b, .tae-inner-tab-textarea-c, .tae-inner-tab-textarea-d, .tae-email-textarea {
+    border: 1px solid #cccccc;
+    padding: 4px;
+}
+
+.operator-priority-input {
+    border: 1px solid #cccccc;
+    width: 50px;
+}

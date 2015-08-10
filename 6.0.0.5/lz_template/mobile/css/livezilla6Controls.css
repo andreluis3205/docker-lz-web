@@ -1,0 +1,304 @@
+/********** Input fields **********/
+.lzm-input-container-a, .lzm-input-container-c {
+    position: relative;
+    width: 200px;
+    height: 30px;
+}
+
+.lzm-input-icon-a {
+    position:absolute;
+    left: 0px;
+    top: 18px;
+    height: 14px;
+    padding: 8px 10px;
+    background-color: #e8e8e8;
+    border: 1px solid #cccccc;
+}
+
+.lzm-input-text-a {
+    position:absolute;
+    top: 18px;
+    height: 30px;
+    border: 1px solid #cccccc;
+    border-left: 0px;
+    overflow: hidden;
+}
+
+.lzm-input-inner-a, .lzm-input-inner-c {
+    height: 24px;
+    border: 0px;
+    margin-top: 2px;
+    margin-left: 5px;
+    outline: none;
+}
+
+.lzm-label-a, .lzm-label-c {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.lzm-input-container-b {
+    position: relative;
+    width: 127px;
+    height: 22px;
+}
+
+.lzm-input-icon-b {
+    position:absolute;
+    right:0px;
+    top: 0px;
+    height: 6px;
+    padding: 4px 4px 10px 4px;
+    background-color: #e8e8e8;
+    border: 1px solid #cccccc;
+    border-left: 0px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.lzm-input-icon-b i.fa {
+
+}
+
+.lzm-input-text-b {
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 20px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    overflow: hidden;
+}
+
+.lzm-input-inner-b {
+    height: 14px;
+    border: 0px;
+    margin-top: 1px;
+    margin-left: 2px;
+    outline: none;
+}
+
+.lzm-label-b {
+    width: 0px;
+    height: 0px;
+    display: none;
+}
+
+.lzm-input-icon-c {
+    position:absolute;
+    right:0px;
+    top: 18px;
+    height: 14px;
+    padding: 8px 5px;
+    background-color: #e8e8e8;
+    border: 1px solid #cccccc;
+    border-left: 0px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.lzm-input-icon-c i.fa {
+
+}
+
+.lzm-input-text-c {
+    position:absolute;
+    top: 18px;
+    left: 0px;
+    height: 30px;
+    border: 1px solid #d0d0d0;
+    background-color: #ffffff;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    overflow: hidden;
+}
+
+/********** Buttons **********/
+.lzm-button-a, .lzm-button-b, .lzm-button-c {
+    cursor: pointer;
+    white-space: nowrap;
+    height: 12px;
+    border: 0px;
+    text-shadow: none;
+    font-size: 11px;
+}
+
+.lzm-button-a {
+    padding: 6px 6px;
+    background-color: #e8e8e8;
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.lzm-button-b {
+    padding: 4px 6px;
+    background-color: #e8e8e8;
+    color: #666666;
+    font-size: 11px;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.lzm-button-c {
+    padding: 6px 6px 8px;
+    background-color: #e8e8e8;
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+    border-color: #cccccc;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.lzm-button-a i.fa, .lzm-button-b i.fa, .lzm-button-c i.fa {
+    color: #666666;
+}
+
+.lzm-button-left-a, .lzm-button-left-b {
+    margin-left: 2px;
+}
+
+.lzm-button-right-a, .lzm-button-right-b {
+    margin-right: 2px;
+}
+
+/********** Select boxes **********/
+.lzm-select-a {
+    height: 14px;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 2px;
+    /*font-weight: bold;*/
+    font-size: 12px;
+
+    border: 1px solid #cccccc;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 6px 5px;
+}
+
+.lzm-select-select-a {
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    z-index: 2;
+}
+
+.lzm-select-inner-a {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: left;
+    padding-top: 6px;
+}
+
+.lzm-select-inner-icon-a {
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 12px;
+    padding-right: 12px;
+    min-height: 100%;
+    position: absolute;
+}
+
+.lzm-select-inner-text-a {
+    min-height: 100%;
+    text-shadow: none;
+    font-size: 11px;
+}
+
+/********** Alert Dialog **********/
+.lzm-alert-dialog-container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2000000000;
+}
+.lzm-alert-dialog {
+    position: absolute;
+    background-color: #f1f1f1;
+    border: 4px solid #999999;
+    border-radius: 0px;
+    overflow-y: auto;}
+
+.alert-button {
+    font-weight: bold;
+    padding: 3px 12px;
+    margin: 5px;
+    cursor:pointer;
+    background-color: #e8e8e8;
+    color: #666666;
+    border: 1px solid #cccccc;
+    text-shadow: none;
+}
+
+/********** Combobox **********/
+.lzm-combobox {
+    margin: 2px;
+    padding: 3px 3px 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 1;
+}
+
+.lzm-combobox input:focus {
+    outline: 0;
+}
+
+/********** Other **********/
+.input-like {
+    opacity: 0.8;
+    cursor: default!important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 3px;
+    margin: 2px;
+    height: 16px;
+    white-space: nowrap;
+    min-width: 180px;
+}
+
+.lzm-tabs {
+    border: 1px solid #ccc;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 4px 8px 2px 8px;
+    cursor: pointer;
+    margin-right: 2px;
+    border-bottom: 0px;
+}
+
+fieldset.lzm-fieldset {
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.lzm-fieldset legend {
+    margin-left: -3px;
+    user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}

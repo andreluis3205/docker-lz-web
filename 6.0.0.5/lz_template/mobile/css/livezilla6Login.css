@@ -1,0 +1,95 @@
+#headline {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 115px;
+    border-bottom: 0px;
+}
+
+#headline-logo {
+    background: url('../img/logo.png') no-repeat center;
+    height:115px;
+    margin-top: 30px;
+}
+
+#login-container {
+    position: absolute;
+    border: 1px solid #e9e9e9;
+    border-top: 2px solid #cccccc;
+    width: 600px;
+    height:300px;
+    left:200px;
+    top:200px;
+}
+
+#login-headline {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-bottom: 1px solid #e9e9e9;
+    height: 16px;
+    width: 100%;
+    padding: 11px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+#login-headline-text {
+    color: #808080;
+    padding-left: 10px;
+}
+
+#login-form {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+
+#login_btn {
+    position: absolute;
+    top: 230px;
+    right: 18px;
+}
+
+#orientation_btn {
+    position: absolute;
+    top: 230px;
+    left: 18px;
+}
+
+#configure_btn {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#user_status-outer {
+    position: absolute;
+    top: 230px;
+}
+
+#user_status-inner-text {
+    /*visibility: hidden;*/
+    padding-left: 14px;
+}
+
+#login-checkbox-div {
+    position: absolute;
+    left: 20px;
+    top: 150px;
+}
+
+#profile-selection-div {
+    position: absolute;
+    top: 177px;
+    left: 20px;
+    right: 20px;
+}
+
+#login-copyright-link {
+    position: absolute;
+    text-align:center;
+    width: 100%;
+    bottom:20px;
+}
