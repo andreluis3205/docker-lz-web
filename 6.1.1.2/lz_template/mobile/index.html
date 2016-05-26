@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+        Livezilla Mobile
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="./fonts/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/livezilla6App.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/livezilla6.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/livezilla6Login.css" />
+    <link rel="stylesheet" type="text/css" href="./css/livezilla6Controls.css" />
+
+    <script type="text/javascript" src="./js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="./js/jsglobal.js"></script>
+    <script type="text/javascript" src="./js/md5.js"></script>
+    <script type="text/javascript" src="./js/sha1.js"></script>
+    <script type="text/javascript" src="./js/sha256.js"></script>
+
+    <script type="text/javascript" src="./js/lzm/classes/CommonDeviceInterfaceClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonWindowsDeviceInterfaceClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonConfigClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonToolsClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonStorageClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonDisplayClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonDialogClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonDisplayHelperClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonInputControlsClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonDisplayLayoutClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/classes/CommonTranslationClass.js"></script>
+    <script type="text/javascript" src="./js/lzm/index.js"></script>
+    <script type="text/javascript" src="./js/lzm/translationData.js"></script>
+    <script type="text/javascript">
+        var logit = function(myString) {
+            try {
+                console.log(myString);
+            } catch(e) {}
+        };
+    </script>
+</head>
+<body>
+<noscript>
+<div id="no-js-warning" style="display: block;">
+    <div style="margin-top: 69px; padding:42px; background: url('img/logo.png'); background-position: center; background-repeat: no-repeat;"></div>
+    <p style="padding: 0px 20px; font-size: 1.5em;">
+        Your browser seems to have Javascript disabled.<br />
+        Please enable Javascript in your browser settings and reload this page.
+    </p>
+</div>
+</noscript>
+<div id="no-storage-warning" style="display: none;">
+    <h1>No Cookies/local Storage available</h1>
+</div>
+<div id="headline"></div>
+<div id="login-container">
+    <div id="login-headline"><i class="fa fa-lock"></i><span id="login-headline-text">Please enter your login</span></div>
+    <div id="login-form"></div>
+</div>
+<div id="login-copyright-link"></div>
+<form id="data-submit-form" method="post" data-ajax="false">
+</form>
+
+</body>
+</html>

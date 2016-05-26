@@ -1,0 +1,74 @@
+/****************************************************************************************
+* LiveZilla livezilla.css
+*
+* Copyright 2013 LiveZilla GmbH
+* All rights reserved.
+* LiveZilla is a registered trademark.
+*
+***************************************************************************************/
+
+
+/********** Combobox **********/
+.lzm-combobox {
+    margin: 2px;
+    line-height: 1;
+}
+
+.lzm-combobox input:focus {
+    outline: 0;
+}
+
+.lzm-combobox input{
+    background:transparent;
+}
+
+.lzm-combobox-small, .lzm-combobox-small input{
+    width: 68px !important;
+}
+
+.lzm-combobox-medium, .lzm-combobox-medium input{
+    width: 100px !important;
+}
+
+
+
+select#language-selection, select#group-selection, select#browser-selection {
+    min-width: 50px;
+}
+
+.html-email-iframe {
+    border: 0;
+}
+
+#configure_form {background-color: #ffffff; position: absolute; padding: 10px 20px; border-radius: 10px; border: 1px solid #ccc;}
+.login-data-table tr td {padding: 3px 0px;}
+.new-profile-table tr td:first-child, .edit-profile-table tr td:first-child, .login-data-table tr td:first-child {padding: 7px 10px 7px 1px;}
+
+#ticket-reply input[type=checkbox] {
+    vertical-align: middle;
+}
+
+@-moz-keyframes lz_anim_loading {0% {-moz-transform: rotate(0deg);transform: rotate(0deg);}100% {-moz-transform: rotate(360deg);transform: rotate(360deg);}}
+@-webkit-keyframes lz_anim_loading {0% {-webkit-transform: rotate(0deg);transform: rotate(0deg);}100% {-webkit-transform: rotate(360deg);transform: rotate(360deg);}}
+@keyframes lz_anim_loading {0% {-moz-transform: rotate(0deg);-ms-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}100% {-moz-transform: rotate(360deg);-ms-transform: rotate(360deg);-webkit-transform: rotate(360deg);transform: rotate(360deg);}}
+.lz_anim_loading:not(:required) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:-30px 0 0 -24px;
+    border:12px solid #b2b2b2;
+    border-right-color:transparent;
+    width:48px;height:48px;
+    border-radius:32px;
+    animation: lz_anim_loading 1250ms infinite linear;
+    box-sizing:border-box;
+    display:inline-block;
+    overflow:hidden;
+    text-indent:-9999px;
+}
+
+
+
+
+
+
